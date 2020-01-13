@@ -1,0 +1,38 @@
+{
+  "name": "always",
+  "version": "1.0.0",
+  "description": "This is my new Project",
+  "main": "app.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" ",
+    "frontend": "npm start --prefix client",
+    "backend": "nodemon --exec babel-node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "always"
+  ],
+  "author": "nolec",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "helmet": "^3.21.2",
+    "mongoose": "^5.8.7",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "@babel/preset-react": "^7.8.0",
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
